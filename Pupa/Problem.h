@@ -23,8 +23,10 @@ private:
 	int vehicleCapacity;
 	std::vector<Customer> customers;
 	Customer depot;
+	std::string name;
 	Problem() = default;
 public:
 	static Problem loadFromFile(std::string path);
-
+	std::string getName() { return name; }
+	std::vector<Customer> getCustomers() { return customers; }
 };

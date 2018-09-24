@@ -2,14 +2,11 @@
 
 #include <vector>
 
-class Route
-{
-private:
-	std::vector<int> Customers;
-};
 
 class Solution
 {
 private:
-	std::vector<Route> Routes;
+	std::vector<std::vector<int>> routes;
+public:
+	static Solution loadFromFile(std::string path);
 };
